@@ -16,13 +16,13 @@ class Solution {
                     len=i-lastIndex.get(c);
                     
                 }
-                lastIndex.put(c,i);
+                
                 
             }else{
-                lastIndex.put(c,i);
                 len++;
                 
             }
+            lastIndex.put(c,i);
         }
         return Math.max(len,maxLen);
         
