@@ -12,7 +12,7 @@ class MyQueue {
     
     public void push(int x) {
         if(pullStack.size()!=0){
-            popAll(pullStack);
+            popAll();
             
         }
         pushStack.push(x);
@@ -21,7 +21,7 @@ class MyQueue {
     
     public int pop() {
         if(pushStack.size()!=0){
-            popAll(pushStack);
+            popAll();
             
         }
         return pullStack.pop();
@@ -30,7 +30,7 @@ class MyQueue {
     
     public int peek() {
         if(pushStack.size()!=0){
-            popAll(pushStack);
+            popAll();
             
         }
         return pullStack.peek();
@@ -46,7 +46,7 @@ class MyQueue {
         
     }
     
-    private void popAll(Stack<Integer> stack){
+    private void popAll(){
         if(pushStack.size()!=0){
             while(!pushStack.isEmpty()){
                 pullStack.push(pushStack.pop());
