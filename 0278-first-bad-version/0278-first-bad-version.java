@@ -16,7 +16,7 @@ public class Solution extends VersionControl {
                     return mid;
                     
                 }
-                end=mid-1;
+                return firstBadVersion(mid-1);
                 
             }else{
                 start=mid+1;
