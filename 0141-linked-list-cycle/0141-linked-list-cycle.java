@@ -24,7 +24,6 @@ public class Solution {
             if(temp2==null) return false;
             temp=temp.next;
             if(temp==null) return false;
-            
             if(temp==temp2) return true;
             
         }
